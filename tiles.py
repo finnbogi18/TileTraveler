@@ -111,7 +111,18 @@ def threeone():
 
 
 def threetwo():
-    print("poop")
+    print("You can travel: (N)orth or (S)outh.")
+    status = True
+    while status == True:
+        input_dir = inputdir()
+        if input_dir == "n" or input_dir == "N":
+            status = False
+            threethree()
+        elif input_dir == "s" or input_dir == "S":
+            status = False
+            threeone()
+        else:
+            print("Not a valid direction!")
 
 
 def threethree():
