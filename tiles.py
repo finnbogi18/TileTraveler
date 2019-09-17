@@ -107,7 +107,7 @@ def twothree():
 
 
 def threeone():
-    print("poop")
+    print("Victory!")
 
 
 def threetwo():
