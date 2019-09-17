@@ -63,8 +63,17 @@ def onethree():
         else:
             print("Not a valid direction!")
 
+
 def twoone():
-    print("poop")
+    print("You can travel: (N)orth.")
+    status = True
+    while status == True:
+        input_dir = inputdir()
+        if input_dir == "n" or input_dir == "N":
+            status = False
+            twotwo()
+        else:
+            print("Not a valid direction!")
 
 
 def twotwo():
