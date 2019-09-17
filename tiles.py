@@ -14,11 +14,6 @@ def 1,1():
 
 """
 
-
-def dog():
-    print("dog poop")
-
-
 def oneone():
     print("You can travel: (N)orth.")
     status = True
@@ -98,10 +93,10 @@ def twothree():
         input_dir = inputdir()
         if input_dir == "e" or input_dir == "E":
             status = False
-            onethree()
+            threethree()
         elif input_dir == "w" or input_dir == "W":
             status = False
-            threethree()
+            onethree()
         else:
             print("Not a valid direction!")
 
@@ -126,9 +121,22 @@ def threetwo():
 
 
 def threethree():
-    print("poop")
+    print("You can travel: (S)outh or (W)est.")
+    status = True
+    while status == True:
+        input_dir = inputdir()
+        if input_dir == "w" or input_dir == "W":
+            status = False
+            twothree()
+        elif input_dir == "s" or input_dir == "S":
+            status = False
+            threetwo()
+        else:
+            print("Not a valid direction!")
 
 
 def inputdir():
     direction = input("Direction: ")
     return direction
+
+oneone()
