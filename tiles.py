@@ -1,19 +1,6 @@
-"""
-Gera fall fyrir hvert tile og skilgreina hvort hægt sé að fara north, south, west eða south. Nota IF commands sem segja hver maður getur farið
-Dæmi:
-
-def 1,1():
-    Print("you can travel: (N)orth.")
-    input = ("direction:")
-    if input == 'n' or input == 'N':
-        1,2()
-    else:
-        print("Not a valid direction")
-
-
-
-"""
-
+# This function tells you which directions and calls the next function if input is correct,
+# if not the user will be asked for a new input.
+# This is the case for all the functions except inputdir().
 def oneone():
     print("You can travel: (N)orth.")
     status = True
@@ -101,6 +88,7 @@ def twothree():
             print("Not a valid direction!")
 
 
+# If this function is called, "Victory!" gets printed out.
 def threeone():
     print("Victory!")
 
@@ -135,8 +123,11 @@ def threethree():
             print("Not a valid direction!")
 
 
+# Asks the user for a direction he wishes to move in.
 def inputdir():
     direction = input("Direction: ")
     return direction
 
+
+# Starts the game with the player in box [1, 1]
 oneone()
