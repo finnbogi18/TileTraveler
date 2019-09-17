@@ -1,6 +1,11 @@
-# This function tells you which directions and calls the next function if input is correct,
-# if not the user will be asked for a new input.
-# This is the case for all the functions except inputdir().
+# Finnbogi Jakobsson og Hákon Hákonarson
+
+""" This function tells you which directions and calls
+the next function if input is correct,
+if not the user will be asked for a new input.
+This is the case for all the functions except inputdir()."""
+
+
 def oneone():
     print("You can travel: (N)orth.")
     status = True
