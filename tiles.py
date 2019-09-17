@@ -92,7 +92,18 @@ def twotwo():
 
 
 def twothree():
-    print("poop")
+    print("You can travel: (E)ast or (W)est.")
+    status = True
+    while status == True:
+        input_dir = inputdir()
+        if input_dir == "e" or input_dir == "E":
+            status = False
+            onethree()
+        elif input_dir == "w" or input_dir == "W":
+            status = False
+            threethree()
+        else:
+            print("Not a valid direction!")
 
 
 def threeone():
