@@ -42,7 +42,7 @@ def onetwo():
         elif input_dir == "e" or input_dir == "E":
             status = False
             twotwo()
-        if input_dir == "s" or input_dir == "S":
+        elif input_dir == "s" or input_dir == "S":
             status = False
             oneone()
         else:
@@ -50,8 +50,18 @@ def onetwo():
 
 
 def onethree():
-    print("poop")
-
+    print("You can travel: (E)ast or (S)outh.")
+    status = True
+    while status == True:
+        input_dir = inputdir()
+        if input_dir == "e" or input_dir == "E":
+            status = False
+            twothree()
+        elif input_dir == "s" or input_dir == "S":
+            status = False
+            onetwo()
+        else:
+            print("Not a valid direction!")
 
 def twoone():
     print("poop")
@@ -61,7 +71,7 @@ def twotwo():
     print("poop")
 
 
-def twotree():
+def twothree():
     print("poop")
 
 
